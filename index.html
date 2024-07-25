@@ -150,55 +150,7 @@
             </div>
           </div>
         </div>
-        <style>
-        /* Styles for the timeline and popup */
-        #timeline-popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-width: 800px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            padding: 20px;
-            z-index: 1000;
-            overflow-y: auto;
-            position: relative;
-        }
-
-        #timeline-popup .close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-
-        #show-popup-btn {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-        </style>
-        
     <h4 class="stat-title">My Timeline</h4>
-    <div id="show-popup-btn">Click here to view my timeline</div>
-
     <div class="overlay" id="overlay"></div>
 
     <div id="timeline-popup">
@@ -246,7 +198,6 @@
                 </div>
                 <p class="tl-duration">2022 - 2024</p>
                 <h5>Diploma in Computer Science<span> - University of Regina</span></h5>
-                <p>
                     At the University of Regina, I gained a comprehensive understanding of computer science through both theoretical and practical learning. Key experiences include:
                     <ul>
                         <li>Programming Skills: Proficient in Python, SQL/MySQL, C, C++, and web technologies like HTML, CSS, JavaScript, PHP, Ajax, .NET, AngularJS, and Bootstrap.</li>
@@ -257,31 +208,10 @@
                         <li>Data Management: Skills in data analysis, visualization, and dashboard building using Power BI, Tableau, and Excel.</li>
                         <li>Cloud & Business Knowledge: Foundation in AWS, Azure, business workflows, digital transformation, CLM, and ALM. Proficient in MS Office 365.</li>
                     </ul>
-                </p>
             </div>
         </div>
     </div>
-    <script>
-        const showPopupBtn = document.getElementById('show-popup-btn');
-        const overlay = document.getElementById('overlay');
-        const timelinePopup = document.getElementById('timeline-popup');
-        const closePopup = document.getElementById('close-popup');
-
-        showPopupBtn.addEventListener('click', () => {
-            overlay.style.display = 'block';
-            timelinePopup.style.display = 'block';
-        });
-
-        closePopup.addEventListener('click', () => {
-            overlay.style.display = 'none';
-            timelinePopup.style.display = 'none';
-        });
-
-        overlay.addEventListener('click', () => {
-            overlay.style.display = 'none';
-            timelinePopup.style.display = 'none';
-        });
-    </script>
+  
       <section class="container" id="portfolio">
         <div class="main-title">
           <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
