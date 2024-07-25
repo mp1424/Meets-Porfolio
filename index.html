@@ -32,11 +32,26 @@
         <div class="right-header">
           <h1 class="name">
             Hi, I'm <span>Meet Patel</span>
-            Full Stack Developer
+            <div id="role-container">Data Analysis</div>
+            <script>
+              const roles = [
+                "Data Analysis",
+                "Web Development",
+                "Back-end Development",
+                "Front-end Development"
+              ];
+              let currentIndex = 0;
+              function changeRole() {
+                const roleContainer = document.getElementById('role-container');
+                currentIndex = (currentIndex + 1) % roles.length;
+                roleContainer.textContent = roles[currentIndex];
+              }
+              setInterval(changeRole, 500); // Change role every 5 seconds
+            </script>
           </h1>
         </div>
       </div>
-    </header>
+     </header>
     <main>
       <section class="container about" id="about">
         <div class="main-title">
